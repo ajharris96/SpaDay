@@ -37,10 +37,16 @@ namespace SpaDay.Controllers
             ViewBag.username = newUser.Username;
             ViewBag.email = newUser.Email;
             ViewBag.date = newUser.Created;
+
+            
+
             if (newUser.VerifyPassword(verify))
             {
                 ViewBag.passverified = true;
+                newUser.Created = DateTime.Now.ToString();
+                ViewBag.created = newUser.Created;
                 
+
                 return View("Index");
             }
              
