@@ -43,9 +43,9 @@ namespace SpaDay.Controllers
             if (newUser.VerifyPassword(verify))
             {
                 ViewBag.passverified = true;
-                newUser.Created = DateTime.Now.ToString();
+                //newUser.Created = DateTime.Now.ToString();
+                //ViewBag.created = newUser.Created;
                 ViewBag.created = newUser.Created;
-                
 
                 return View("Index");
             }
