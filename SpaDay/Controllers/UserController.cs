@@ -36,7 +36,7 @@ namespace SpaDay.Controllers
 
             ViewBag.username = newUser.Username;
             ViewBag.email = newUser.Email;
-            ViewBag.date = newUser.Created;
+            //ViewBag.date = newUser.Created;
 
             
 
